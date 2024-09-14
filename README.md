@@ -12,7 +12,7 @@ The demo includes the technique of [RelateAnything](https://github.com/Luodian/R
 
 ## Setup
 
-##### 1.Environment Settings
+### 1.Environment Settings
 
 To set up the environment, we use Conda to manage dependencies:
 
@@ -20,12 +20,14 @@ To set up the environment, we use Conda to manage dependencies:
 conda env create -f environment.yml
 ```
 
-##### 2.Download model checkpoints
+### 2.Download model checkpoints
 
 Download the pretrained model
 
 1.SAM:[link](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth)
+
 2.RAM:[link](https://1drv.ms/u/s!AgCc-d5Aw1cumQapZwcaKob8InQm?e=qyMeTS)
+
 3.Openclip:[link](https://huggingface.co/laion/CLIP-ViT-H-14-laion2B-s32B-b79K/blob/main/open_clip_pytorch_model.bin)
 
 And put these pretrained models into **"./checkpoints"**.
@@ -34,11 +36,11 @@ And put these pretrained models into **"./checkpoints"**.
 
 And put these files into **"./bert-base-uncased"**.
 
-##### 3.Images preparing for evaluation
+### 3.Images preparing for evaluation
 
 To perform image semantic difference evaluation, you first need to place the original images and the transmitted images in the respective directories **"./dataset/origin"** and **"./dataset/recover"**. Name the images sequentially as **"0001.jpg", "0002.jpg", ..., "xxxx.jpg"**.
 
-##### 4.Run the demo
+#### 4.Run the demo
 
 SeSS is a two-step process. 
 
